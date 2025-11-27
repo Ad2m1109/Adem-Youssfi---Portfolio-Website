@@ -125,7 +125,7 @@ class PortfolioData:
     @staticmethod
     def load_blog_posts():
         csv_path = os.path.join('data', 'blog_posts.csv')
-        expected_fields = ['title', 'date', 'description', 'url']
+        expected_fields = ['title', 'date', 'description', 'url', 'image_url']
         return PortfolioData._load_from_csv(csv_path, expected_fields)
 
     @classmethod
