@@ -132,35 +132,26 @@ class PortfolioData:
     def get_portfolio_data(cls):
         return {
             'name': 'Adem Youssfi',
-            'title': 'Computer Science Student | AI/ML Engineer | Full-Stack Developer',
-            'bio': "I'm a passionate second-year Computer Science student with extensive hands-on experience in AI/ML, computer vision, full-stack development, and mobile apps. I've built 25+ projects across machine learning, web, mobile, and desktop platforms, demonstrating strong problem-solving skills and technical versatility.",
-            'about': "A highly motivated Computer Science student specializing in Artificial Intelligence, Machine Learning, and Full-Stack Development. I've successfully delivered 25+ projects ranging from advanced computer vision systems (football analytics with YOLOv8/TensorRT) to cross-platform mobile apps (Flutter) and web applications (Flask, FastAPI). My expertise spans the entire development lifecycle - from concept to deployment - with a focus on creating innovative, user-centric solutions. I'm passionate about leveraging cutting-edge technologies to solve real-world problems and continuously expanding my skillset through hands-on projects.",
+            'title': 'AI Expert | Full Stack Developer | Technical Educator',
+            'about': "A results-driven Computer Science student with over five years of hands-on experience in full-stack development and AI. I have a proven ability to build high-performance, ML-powered applications, lead technical teams, and educate peers through workshops and technical articles. My experience includes a web development internship where I developed over 22 unique web pages for a large-scale e-commerce marketplace. I am passionate about developing scalable, well-documented software and am always eager to learn new technologies.",
             'experience': [
                 {
-                    'title': 'AI & Computer Vision Engineer',
-                    'description': 'Engineered and deployed advanced computer vision systems using YOLOv8, TensorRT, and OpenCV for real-time object detection and tracking in sports analytics. Developed and optimized deep learning models for facial recognition and landmark detection, achieving high accuracy and performance.'
+                    'title': 'Web Development Intern',
+                    'description': 'Developed over 22 unique web pages and components for a large-scale e-commerce marketplace project within one month. Contributed to a significant project that has been under continuous development for two years, demonstrating adaptability and rapid integration into existing complex codebase.'
                 },
                 {
-                    'title': 'Full-Stack Developer',
-                    'description': 'Architected and developed scalable web applications using Flask, FastAPI, and Laravel. Designed and implemented RESTful APIs, managed databases, and deployed production-ready applications on cloud platforms. Championed responsive design and a seamless user experience.'
+                    'title': 'Technical Educator & Workshop Leader',
+                    'description': 'Provided private lessons in algorithmics, problem-solving, and web development. Organized and led comprehensive workshops on Flutter, software design, API/backend architecture, AI/ML, and LLM API integration.'
                 },
                 {
-                    'title': 'Mobile App Developer',
-                    'description': 'Led the development of 10+ cross-platform mobile applications using Flutter and Dart, from concept to deployment on the app stores. Integrated AI-powered features, implemented offline-first architecture, and ensured high-quality user experiences.'
-                },
-                {
-                    'title': 'Machine Learning Practitioner',
-                    'description': 'Developed and evaluated predictive models using scikit-learn and TensorFlow for various data science projects. Implemented and visualized clustering algorithms, and performed data analysis and feature engineering to extract valuable insights.'
-                },
-                {
-                    'title': 'Software Engineer',
-                    'description': 'Designed and built desktop applications using Python (Tkinter) and Java (Swing). Contributed to open-source projects, managed version control with Git, and collaborated with teams to deliver high-quality software solutions.'
+                    'title': 'Project Team Leader & System Architect',
+                    'description': 'Led development teams of 3-5 members in delivering complex software projects from conception to deployment. Created comprehensive system architecture using UML diagrams. Developed detailed API documentation and technical specifications. Implemented software design patterns and best practices.'
                 }
             ],
             'education': {
-                'degree': "Bachelor's Degree in Computer Science",
-                'level': 'Second Year Student - Expected Graduation: 2027',
-                'courses': 'Core Coursework: Data Structures & Algorithms, Object-Oriented Programming (Java, C++), Database Management (SQL), Web Technologies (HTML, CSS, JavaScript, PHP), Machine Learning & AI, Computer Vision, Software Engineering, Mobile Development, Network Programming'
+                'degree': "Bachelor of Science in Computer Science",
+                'level': 'ISITCom (Higher Institute of Information and Communication Technologies), Sousse, Tunisia. Expected Graduation: June 2025 - Current Year: 3rd Year',
+                'courses': 'Relevant Coursework: Data Structures & Algorithms, Database Systems, Software Engineering, Machine Learning, Web Development, Mobile Application Development, Computer Vision'
             },
             'blog_posts': cls.load_blog_posts(),
             'projects': cls.load_projects(),
@@ -172,13 +163,14 @@ class PortfolioData:
                 'linkedin': 'Adem Youssfi',
                 'linkedin_url': 'https://www.linkedin.com/in/adem-youssfi-2289672a4',
                 'github': 'Ad2m1109',
-                'github_url': 'https://github.com/Ad2m1109'
+                'github_url': 'https://github.com/Ad2m1109',
+                'blogger': 'behindthecodebyadem.blogspot.com'
             },
             'stats': {
-                'projects_completed': '25+',
-                'technologies_mastered': '20+',
-                'years_coding': '3+',
-                'github_repos': '30+'
+                'projects_completed': '40+',
+                'technologies_mastered': '24+',
+                'years_coding': '5+',
+                'github_repos': '40+'
             }
         }
 

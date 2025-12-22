@@ -126,14 +126,6 @@
                         <div class="container text-center">
                             <h1 id="hero-heading" class="display-4 mb-3">Hi, I'm Adem Youssfi</h1>
                             <h2 class="typing-text mb-4" aria-live="polite"></h2>
-                            <div class="row justify-content-center">
-                                <div class="col-md-8">
-                                    <div class="about-content">
-                                        <p class="lead">{{ data.title }}</p>
-                                        <p class="about-text mt-4">{{ data.bio }}</p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </section>
             
@@ -144,7 +136,6 @@
                             <div class="row">
                                 <div class="col-md-12 mb-4">
                                     <div class="about-intro text-center">
-                                        <p class="lead">{{ data.title }}</p>
                                         <p class="about-text mt-3">{{ data.about }}</p>
                                     </div>
                                 </div>
@@ -188,20 +179,25 @@
                     <section id="blog" class="py-5 bg-light animate-on-scroll" aria-labelledby="blog-heading">
                         <div class="container">
                             <h2 id="blog-heading" class="text-center mb-5">Blog & Writings</h2>
-                            <div class="row">
-                                {% for post in data.blog_posts %}
-                                <div class="col-md-6 col-lg-4 mb-4">
-                                    <div class="card h-100 shadow-sm blog-card">
-                                        <img src="{{ post.image_url }}" class="card-img-top blog-image" alt="{{ post.title }}" loading="lazy">
-                                        <div class="card-body d-flex flex-column">
-                                            <h5 class="card-title">{{ post.title }}</h5>
-                                            <p class="card-text text-muted"><i class="far fa-calendar-alt me-2"></i>{{ post.date }}</p>
-                                            <p class="card-text">{{ post.description }}</p>
-                                            <a href="{{ post.url }}" class="btn btn-primary mt-auto" target="_blank" rel="noopener">Read More</a>
+                            <div class="project-scroll-wrapper" id="blog-scroll-wrapper">
+                                <button class="scroll-btn left" aria-label="Scroll left"><i class="fas fa-chevron-left"></i></button>
+                                <div class="project-grid" id="blog-grid">
+                                    {% for post in data.blog_posts %}
+                                    <article class="blog-post-card">
+                                        <img src="{{ post.image_url }}" alt="{{ post.title }} screenshot" class="blog-image">
+                                        <div class="project-overlay">
+                                            <h3 class="project-title">{{ post.title }}</h3>
+                                            <p class="project-description">{{ post.description }}</p>
+                                            <div class="project-links">
+                                                <a href="{{ post.url }}" class="btn btn-info" target="_blank" rel="noopener" aria-label="Read {{ post.title }}">
+                                                    <i class="fas fa-external-link-alt"></i> Read More
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </article>
+                                    {% endfor %}
                                 </div>
-                                {% endfor %}
+                                <button class="scroll-btn right" aria-label="Scroll right"><i class="fas fa-chevron-right"></i></button>
                             </div>
                         </div>
                     </section>
@@ -221,9 +217,9 @@
                     <button class="filter-btn" data-filter="web" aria-pressed="false" aria-label="Show web projects">Web</button>
                 </div>
 
-                <div class="project-scroll-wrapper">
+                <div class="project-scroll-wrapper" id="projects-scroll-wrapper">
                     <button class="scroll-btn left" aria-label="Scroll left"><i class="fas fa-chevron-left"></i></button>
-                    <div class="project-grid">
+                    <div class="project-grid" id="projects-grid">
                         {% for project in data.projects %}
                         <article class="project-card{% if project.get('is_current') %} current-website{% endif %}" data-category="{{ project.category }}">
                             <img src="{{ project.image_url }}" alt="{{ project.title }} screenshot" class="project-image-img">
