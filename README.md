@@ -151,11 +151,6 @@ This repository primarily serves as a personal engineering portfolio. However, s
 
 ---
 
-## License
-
-MIT License - See [LICENSE](LICENSE) for details.
-
----
 
 **Built with focus on engineering excellence and clarity of communication.**
 
