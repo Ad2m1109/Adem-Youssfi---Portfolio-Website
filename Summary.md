@@ -9,7 +9,7 @@ Your portfolio has been completely updated to showcase all 25+ projects from you
 
 ### 1. **Projects (projects.csv)**
 - ✨ **Added 18 new projects** from your GitHub
-- 📊 **Total: 25 projects** now displayed
+- 📊 **Total: 18 projects** now displayed
 - 🏷️ Projects organized by categories:
   - **AI Projects**: Football Analytics, Coach Pro, Gemini Agent, Food Chatbot
   - **Machine Learning**: Face Detection, K-means Visualizer, Housing Predictor

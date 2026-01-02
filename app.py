@@ -174,33 +174,38 @@ class PortfolioData:
             }
         }
 
-# Get portfolio data
-portfolio_data = PortfolioData.get_portfolio_data()
+# Note: portfolio data is loaded dynamically on each request to reflect CSV updates without restarting
 
 # Routes
 @app.route('/')
 def index():
-    return render_template('index.html', data=portfolio_data)
+    return render_template('index.html', data=PortfolioData.get_portfolio_data())
 
 @app.route('/api/projects')
 def api_projects():
     """API endpoint for projects"""
-    return jsonify(portfolio_data['projects'])
+    return jsonify(PortfolioData.get_portfolio_data()['projects'])
 
 @app.route('/api/certifications')
 def api_certifications():
     """API endpoint for certifications"""
-    return jsonify(portfolio_data['certifications'])
+    return jsonify(PortfolioData.get_portfolio_data()['certifications'])
 
 @app.route('/api/blog')
 def api_blog_posts():
     """API endpoint for blog posts"""
-    return jsonify(portfolio_data['blog_posts'])
+    return jsonify(PortfolioData.get_portfolio_data()['blog_posts'])
 
 @app.route('/api/stats')
 def api_stats():
     """API endpoint for statistics"""
-    return jsonify(portfolio_data['stats'])
+    return jsonify(PortfolioData.get_portfolio_data()['stats'])
+
+
+@app.route('/api/version')
+def api_version():
+    """Return a simple API version for service worker update checks"""
+    return jsonify({'version': '1.0.0'})
 
 @app.route('/contact', methods=['POST'])
 def contact():
@@ -249,6 +254,12 @@ def manifest():
             }
         ]
     })
+
+
+@app.route('/offline.html')
+def offline():
+    """Offline fallback page for the PWA"""
+    return render_template('offline.html')
 
 @app.errorhandler(404)
 def not_found(error):

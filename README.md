@@ -15,7 +15,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and certi
 
 ## 📊 Portfolio Highlights
 
-- **25+ Projects**: Across AI/ML, Web, Mobile, and Desktop platforms
+- **18 Projects**: Across AI/ML, Web, Mobile, and Desktop platforms
 - **20+ Technologies**: Python, Java, C++, Flutter, Flask, TensorFlow, YOLOv8, and more
 - **3+ Years**: Hands-on coding experience
 - **30+ GitHub Repos**: Active open-source contributions
@@ -141,7 +141,7 @@ title,description,tech_stack,category,github_url,demo_url,is_current,image_url
 "Project Name","Description","Tech1,Tech2",category,https://github.com/...,#,false,/static/images/projects/image.png
 ```
 
-**Categories**: `ai`, `machine-learning`, `mobile`, `web`
+**Categories**: `research`, `tools`, `mobile`, `web`
 
 ### Adding Certifications
 Edit `data/certifications.csv`:

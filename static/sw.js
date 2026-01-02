@@ -4,9 +4,11 @@ const OFFLINE_URL = '/offline.html';
 
 const CACHE_URLS = [
     '/',
+    '/manifest.json',
     '/static/style.css',
-    '/static/main.js',
-    '/static/projects.js',
+    '/static/app.js',
+    '/static/images/icon-192.png',
+    '/static/images/icon-512.png',
     '/offline.html',
     'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css',
